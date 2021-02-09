@@ -1,0 +1,12 @@
+configuration {
+	theme: "/home/david/.config/rofi/theme.rasi";
+	bw: 0;
+	show-icons: true;
+	/*run-shell-command: "{terminal} -e "bash -c \"{cmd} ; exec bash\""";*/
+	run-shell-command: "{terminal} -e "bash -c \"{cmd}\""";
+	icon-theme: "Papirus";
+	separator-style: "none";
+	hide-scrollbar: true;
+	color-normal: "argb:00262b2c, argb:ddb1b9ba, argb:00262b2c, argb:ddb1b9ba, argb:dd262b2c";
+	color-window: "argb:dd262b2c, argb:dd262b2c, argb:ddb1b9ba";
+}
