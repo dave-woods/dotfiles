@@ -46,7 +46,7 @@ function dotfiler {
 		if [[ -L "$1" ]] && ([[ -f "$HOME/.dotfiles/$pth" ]] || [[ -d "$HOME/.dotfiles/$pth" ]])
 		then
 			echo "Dotfile already exists at $HOME/.dotfiles/$pth"
-			exit 1
+			return 1
 		fi
 		mkdir -p "$HOME/.dotfiles/$dr"
 		mv "$1" "$HOME/.dotfiles/$pth"
