@@ -1,0 +1,18 @@
+{
+    "sort": "name", 
+    "seconds": 6.0, 
+    "sort_order": " asc", 
+    "monitor": 1, 
+    "quit_on_motion": null, 
+    "title": "Variety Slideshow", 
+    "zoom": 0.2, 
+    "files_and_folders": [
+        "/home/david/.config/variety/Favorites", 
+        "/home/david/.config/variety/Fetched", 
+        "/home/david/Pictures/wallpapers", 
+        "/home/david/.config/variety/Favorites"
+    ], 
+    "mode": "fullscreen", 
+    "fade": 0.4, 
+    "pan": 0.05
+}
