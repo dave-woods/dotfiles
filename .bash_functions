@@ -38,8 +38,8 @@ function alarmer {
 	fi
 }
 
-function to_dotfiles {
-	if [[ $# -eq 1 ]] && [[ -f "$1" ]] && [[ -d "$HOME/.dotfiles" ]]
+function dotfiler {
+	if [[ $# -eq 1 ]] && [[ -d "$HOME/.dotfiles" ]] && [[ -f "$1" ]] || [[ -d "$1" ]]
 	then
 		pth=$(realpath -s --relative-to="$HOME" "$1")
 		dr=$(dirname "$pth")
