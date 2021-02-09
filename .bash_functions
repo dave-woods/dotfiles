@@ -43,6 +43,11 @@ function dotfiler {
 	then
 		pth=$(realpath -s --relative-to="$HOME" "$1")
 		dr=$(dirname "$pth")
+		if [[ -L "$1" ]] && ([[ -f "$HOME/.dotfiles/$pth" ]] || [[ -d "$HOME/.dotfiles/$pth" ]])
+		then
+			echo "Dotfile already exists at $HOME/.dotfiles/$pth"
+			exit 1
+		fi
 		mkdir -p "$HOME/.dotfiles/$dr"
 		mv "$1" "$HOME/.dotfiles/$pth"
 		ln -s "$HOME/.dotfiles/$pth" "$1"
