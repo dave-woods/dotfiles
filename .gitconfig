@@ -1,0 +1,7 @@
+[user]
+	email = 11319140+dave-woods@users.noreply.github.com
+	name = Dave Woods
+[push]
+	default = simple
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
