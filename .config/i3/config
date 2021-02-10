@@ -468,6 +468,8 @@ for_window [class="mpv"] floating enable, resize set 640 480;
  # exec --no-startup-id nm-applet
  # Volume Control icon
  # exec --no-startup-id pasystray
+# Blue light filter
+exec --no-startup-id xflux
 # Wallpaper changer
 exec --no-startup-id variety
 # Window compositing manager
