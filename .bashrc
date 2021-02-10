@@ -133,7 +133,9 @@ fi
 export BEEP=/usr/share/sounds/ubuntu/notifications/Mallet.ogg
 alias beep="paplay $BEEP"
 
-export PATH="$PATH:$HOME/.scripts"
+# My scripts location
+# Note: reconfigured this to have symlinks in ~/bin
+# export PATH="$PATH:$HOME/.scripts"
 
 export EDITOR=vim
 export TERMINAL=gnome-terminal
