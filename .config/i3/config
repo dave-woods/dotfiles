@@ -398,15 +398,16 @@ mode "pomodoro" {
 
 
 ## locker
-bindsym $mod+l mode "lock"; exec ~/.scripts/confirm-lock.sh
-mode "lock" { 
-	bindsym Return exec ~/.scripts/blurlock.sh; mode "default"
-	bindsym Shift+Return exec "~/.scripts/blurlock.sh && sudo pm-suspend"; mode "default"
-	bindsym $mod+s exec "sudo pm-suspend"; mode "default"
-	bindsym Control+Shift+Return exec "~/.scripts/blurlock.sh && sudo pm-hibernate"; mode "default"
-	bindsym $mod+l exec "pkill -f feh"; mode "default"
-	bindsym Escape exec "pkill -f feh"; mode "default"
-}
+# bindsym $mod+l mode "lock"; exec ~/.scripts/confirm-lock.sh
+# mode "lock" { 
+	# bindsym Return exec ~/.scripts/blurlock.sh; mode "default"
+	# bindsym Shift+Return exec "~/.scripts/blurlock.sh && sudo pm-suspend"; mode "default"
+	# bindsym $mod+s exec "sudo pm-suspend"; mode "default"
+	# bindsym Control+Shift+Return exec "~/.scripts/blurlock.sh && sudo pm-hibernate"; mode "default"
+	# bindsym $mod+l exec "pkill -f feh"; mode "default"
+	# bindsym Escape exec "pkill -f feh"; mode "default"
+# }
+bindsym $mod+l exec powermenu
 
 ## remove titlebars, add pixel border
 for_window [class="^.*"] border pixel 0
@@ -427,9 +428,9 @@ workspace 3 gaps inner 0
 workspace 4 gaps inner 0
 workspace 8 gaps inner 0
 
-bindsym $mod+y exec "~/.scripts/yt-search-play/yt-search-play"
+bindsym $mod+y exec yt-search-play
 # if the below breaks, check/update ~/.cache/yt-search-play/cookies.txt
-bindsym $mod+Shift+y exec "~/.scripts/yt-search-play/yt-search-play --subs"
+bindsym $mod+Shift+y exec yt-search-play --subs
 
 ## calendar
 bindsym $mod+c exec zenity --calendar
