@@ -319,6 +319,10 @@ mode "resize" {
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Mod1+Left resize shrink width 1 px or 1 ppt
+        bindsym Mod1+Down resize grow height 1 px or 1 ppt
+        bindsym Mod1+Up resize shrink height 1 px or 1 ppt
+        bindsym Mod1+Right resize grow width 1 px or 1 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -370,10 +374,12 @@ client.urgent           $urg_border 	$bg 					$text 		$urg_border 	$urg_border
 
 ## audio controls
 # increase sound volume
+bindsym Mod1+XF86AudioRaiseVolume exec pactl set-sink-volume 1 +1%
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
 bindsym Shift+XF86AudioRaiseVolume exec pactl set-sink-volume 1 +10%
 bindsym $mod+XF86AudioRaiseVolume exec pactl set-sink-volume 1 100%
 # decrease sound volume
+bindsym Mod1+XF86AudioLowerVolume exec pactl set-sink-volume 1 -1%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
 bindsym Shift+XF86AudioLowerVolume exec pactl set-sink-volume 1 -10%
 bindsym $mod+XF86AudioLowerVolume exec pactl set-sink-volume 1 0%
@@ -432,6 +438,7 @@ workspace 8 gaps inner 0
 bindsym $mod+y exec yt-search-play
 # if the below breaks, check/update ~/.cache/yt-search-play/cookies.txt
 bindsym $mod+Shift+y exec yt-search-play --subs
+bindsym $mod+Mod1+y exec yt-search-play --wl
 
 ## calendar
 bindsym $mod+c exec zenity --calendar
