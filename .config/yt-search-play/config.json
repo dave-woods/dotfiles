@@ -1,5 +1,4 @@
 {
-  "max_cache_age": "600",
 	"reverse_mode": "wl",
 	"use_max_downloads": "wl"
 }
