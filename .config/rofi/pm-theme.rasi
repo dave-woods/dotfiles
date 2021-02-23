@@ -168,8 +168,8 @@ inputbar {
     /* padding:    1px ; */
 		/* children:   [ prompt,textbox-prompt-colon,entry,num-filtered-rows,textbox-num-sep,num-rows,case-indicator ]; */
 		padding: 0px;
-		children: [];
-		enabled: false;
+		/* children: []; */
+		/* enabled: false; */
 }
 case-indicator {
     spacing:    0;
