@@ -1,4 +1,7 @@
 {
 	"reverse_mode": "wl",
-	"use_max_downloads": "wl"
+	"use_max_downloads": "wl",
+	"mark_watched": "true",
+	"max_cache_age": 600,
+	"use_thumbnails": "true"
 }

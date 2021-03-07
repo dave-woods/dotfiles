@@ -444,8 +444,8 @@ workspace 8 gaps inner 0
 
 bindsym $mod+y exec yt-search-play
 # if the below breaks, check/update ~/.cache/yt-search-play/cookies.txt
-bindsym $mod+Shift+y exec yt-search-play --subs
-bindsym $mod+Mod1+y exec yt-search-play --wl
+bindsym $mod+Shift+y exec yt-search-play --subs --max-cache-age 60
+bindsym $mod+Mod1+y exec yt-search-play --watch-later
 
 ## calendar
 bindsym $mod+c exec zenity --calendar
