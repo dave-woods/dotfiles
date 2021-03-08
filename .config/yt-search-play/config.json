@@ -3,5 +3,6 @@
 	"use_max_downloads": "wl",
 	"mark_watched": "true",
 	"max_cache_age": 600,
-	"use_thumbnails": "true"
+	"use_thumbnails": "true",
+	"thumbnail_size": 3
 }
