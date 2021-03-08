@@ -296,6 +296,9 @@ mode "Move to workspace 3#" {
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show; sticky enable
 
+bindsym $mod+Shift+a focus parent, move scratchpad
+bindsym Mod1+Shift+a [class=.*] scratchpad show, floating disable
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -431,6 +434,8 @@ for_window [class="^.*"] border pixel 0
 ## gaps (order of below rules is important)
 ## See https://github.com/Airblader/i3 for more info
 gaps inner 30
+bindsym $mod+g gaps inner all toggle 30
+bindsym $mod+Shift+g gaps outer all toggle 300
  # gaps outer <px>
  # gaps horizontal <px>
  # gaps vertical <px>
