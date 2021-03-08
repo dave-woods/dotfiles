@@ -9,4 +9,14 @@ configuration {
 	hide-scrollbar: true;
 	color-normal: "argb:00262b2c, argb:ddb1b9ba, argb:00262b2c, argb:ddb1b9ba, argb:dd262b2c";
 	color-window: "argb:dd262b2c, argb:dd262b2c, argb:ddb1b9ba";
+	kb-select-1: "";
+	kb-select-2: "";
+	kb-select-3: "";
+	kb-select-4: "";
+	kb-select-5: "";
+	kb-select-6: "";
+	kb-select-7: "";
+	kb-select-8: "";
+	kb-select-9: "";
+	kb-select-10: "";
 }
