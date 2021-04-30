@@ -70,6 +70,8 @@ bindsym $mod+o exec --no-startup-id "rofi -modi file-browser -show file-browser"
 bindsym $mod+Shift+d exec --no-startup-id "rofi -combi-modi run,drun -show combi"
 bindsym Mod1+Tab exec --no-startup-id "rofi -modi window -show window -font 'Mono, FontAwesome 12'"
 
+bindsym $mod+t exec dmenu_synonyms -r
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -343,6 +345,8 @@ bindsym Control+Mod1+Right workspace next
 
 # jump back to previous ws
 workspace_auto_back_and_forth yes
+bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Shift+Tab move container to workspace back_and_forth
 
 # Prevents i3 from picking up keybindings
 # useful if a program needs access to a shortcut defined here
