@@ -1,0 +1,112 @@
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Syntastic'
+Plugin 'vim-airline/vim-airline'
+Plugin 'lrvick/Conque-Shell'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'mattn/emmet-vim'
+Plugin 'junegunn/limelight.vim'
+Plugin 'junegunn/goyo.vim'
+call vundle#end()
+filetype plugin indent on
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+set noexpandtab
+
+autocmd BufNewFile,BufRead *.pl set filetype=prolog
+autocmd Filetype javascript,pug,html,css,xml,jsx,java setlocal ts=2 sw=2 sts=0 expandtab nocindent
+set autoindent
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_shell = '/bin/sh'
+
+set laststatus=2
+set ttimeoutlen=100
+set scrolloff=15
+
+let g:NERDSpaceDelims = 1
+let g:user_emmet_leader_key='<C-Z>'
+
+let g:limelight_conceal_ctermfg = 'gray'
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+function InsertTabWrapper()
+	let col = col('.') - 1
+	if !col || getline('.')[col - 1] !~ '\k'
+		return "\<tab>"
+	else
+		return "\<c-p>"
+	endif
+endfunction
+
+function HomeKeyBehaviour()
+	let col = col('.')
+	execute "normal ^"
+	if col == col('.')
+		execute "normal 0"
+	endif
+	return ""
+endfunction
+
+function MatchBraceCheck(paren)
+	let curr=matchstr(getline('.'), '\%' . col('.') . 'c.')
+    if curr ==# a:paren
+        let ccol=col('.')
+        normal! %%
+        if ccol ==# col('.')
+            return "\<Right>"
+        endif
+    endif
+    return a:paren
+endfunction
+
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap {<CR> {<CR>}<Esc>ko<Tab>
+inoremap {} {}
+inoremap { {}<Esc>i
+inoremap {{ {
+inoremap (<CR> (<CR>)<Esc>ko<Tab>
+inoremap () ()
+inoremap ( ()<Esc>i
+inoremap (( (
+inoremap [<CR> [<CR>]<Esc>ko<Tab>
+inoremap [] []
+inoremap [ []<Esc>i
+inoremap [[ [
+inoremap } <c-r>=MatchBraceCheck("}")<cr>
+inoremap ) <c-r>=MatchBraceCheck(")")<cr>
+inoremap ] <c-r>=MatchBraceCheck("]")<cr>
+inoremap <C-Up> <C-O>yy<C-O>P
+inoremap <C-S-up> <C-O>dd<Up><C-O>P
+inoremap <C-Down> <C-O>yy<C-O>p
+inoremap <C-S-Down> <C-O>dd<C-O>p
+inoremap <C-H> <C-O>db
+inoremap <C-kDel> <C-O>dw<Space><Left>
+nnoremap <C-N> :NERDTreeToggle<CR>
+map <Home> :call HomeKeyBehaviour()<cr>:echo<cr>
+imap <Home> <c-r>=HomeKeyBehaviour()<cr>
+
+set t_Co=256
+set background=dark
+
+set title

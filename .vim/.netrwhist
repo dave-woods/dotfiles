@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/david/code/js/zap/.git'
+let g:netrw_dirhist_2='/home/david/teach/CS1LL2/CS1LL2-2016-17/term projects/StephenMcDermott/lab10'
+let g:netrw_dirhist_3='/home/david/code/js/spa/public/scripts'
+let g:netrw_dirhist_4='/home/david/code/js/squad-view/src/views'
+let g:netrw_dirhist_5='/home/david/code/js/squad-view/src'
+let g:netrw_dirhist_6='/home/david/code/js/squad-view/src/components'
