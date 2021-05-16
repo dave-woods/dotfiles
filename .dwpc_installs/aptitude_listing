@@ -87,9 +87,11 @@ i   deja-dup                        - Back up your files
 i   deja-dup-backend-cloudfiles     - Rackspace Cloudfiles support for Déjà Dup 
 i   deja-dup-backend-s3             - Amazon S3 support for Déjà Dup            
 i   desktop-file-utils              - Utilities for .desktop files              
+i   devscripts                      - scripts to make the life of a Debian Packa
 i   dh-autoreconf                   - debhelper add-on to call autoreconf and cl
 i   dh-python                       - Debian helper tools for packaging Python l
 i   diffutils                       - File comparison utilities                 
+i   digimend-dkms                   - Collection of graphics tablet drivers by D
 i   distro-info-data                - information about the distributions' relea
 i   dnsmasq-base                    - Small caching DNS proxy and DHCP/TFTP serv
 i   docbook-to-man                  - converter from DocBook SGML into roff man 
@@ -102,10 +104,14 @@ i   efibootmgr                      - Interact with the EFI Boot Manager
 i   eject                           - ejects CDs and operates CD-Changers under 
 i   empathy                         - GNOME multi-protocol chat and call client 
 i   eog                             - Eye of GNOME graphics viewer program      
+i   equivs                          - Circumvent Debian package dependencies    
 i   evince                          - Document (PostScript, PDF) viewer         
 i   evince-common                   - Document (PostScript, PDF) viewer - common
 i   evolution                       - groupware suite with mail client and organ
 i   evolution-data-server           - evolution database backend server         
+i   fcitx-config-common             - graphic Fcitx configuration tool - common 
+i   fcitx-module-kimpanel           - Flexible Input Method Framework - KIMPanel
+i   fcitx-mozc                      - Mozc engine for fcitx - Client of the Mozc
 i   feh                             - imlib2 based image viewer                 
 i   festival                        - General multi-lingual speech synthesis sys
 i   festvox-kallpc16k               - American English male speaker for festival
@@ -115,6 +121,7 @@ i   file-roller                     - archive manager for GNOME
 i   findutils                       - utilities for finding files--find, xargs  
 i   firefox                         - Safe and easy web browser from Mozilla    
 i   firefox-locale-en               - English language pack for Firefox         
+i   firefox-locale-ja               - Japanese language pack for Firefox        
 i   flashplugin-installer           - Adobe Flash Player plugin installer (trans
 i   flatpak                         - Application deployment framework for deskt
 i   fluxgui                         - f.lux indicator applet is an indicator app
@@ -135,6 +142,8 @@ i   fonts-opensymbol                - OpenSymbol TrueType font
 i   fonts-sil-abyssinica            - smart Unicode font for Ethiopian and Eryth
 i   fonts-sil-padauk                - smart Unicode font for languages in Myanma
 i   fonts-symbola                   - symbolic font providing emoji characters f
+i   fonts-takao-gothic              - Japanese TrueType font set, Takao Gothic F
+i   fonts-takao-mincho              - Japanese TrueType font set, Takao Mincho F
 i   fonts-takao-pgothic             - Japanese TrueType font set, Takao P Gothic
 i   fonts-thai-tlwg                 - Thai fonts maintained by TLWG (metapackage
 i   fonts-tibetan-machine           - font for Tibetan, Dzongkha and Ladakhi (Op
@@ -176,6 +185,7 @@ i   gnome-doc-utils                 - collection of documentation utilities for
 i   gnome-documents                 - Document manager for GNOME                
 i   gnome-font-viewer               - font viewer for GNOME                     
 i   gnome-getting-started-docs      - Help a new user get started in GNOME      
+i   gnome-getting-started-docs-ja   - Help a new user get started in GNOME (Japa
 i   gnome-keyring                   - GNOME keyring services (daemon and tools) 
 i   gnome-logs                      - viewer for the systemd journal.           
 i   gnome-mahjongg                  - classic Eastern tile game for GNOME       
@@ -218,6 +228,7 @@ i   gstreamer0.10-gnomevfs          - GStreamer plugin for GnomeVFS
 i   gstreamer1.0-alsa               - GStreamer plugin for ALSA                 
 i   gstreamer1.0-plugins-base       - GStreamer plugins from the "base" set     
 i   gstreamer1.0-plugins-base-apps  - GStreamer helper programs from the "base" 
+i   gstreamer1.0-plugins-good       - GStreamer plugins from the "good" set     
 i   gstreamer1.0-pulseaudio         - GStreamer plugin for PulseAudio           
 i   gstreamer1.0-x                  - GStreamer plugins for X11 and Pango       
 i   gthumb                          - image viewer and browser                  
@@ -231,12 +242,18 @@ i   gzip                            - GNU compression utilities
 i   hostname                        - utility to set/show the host name or domai
 i   hplip                           - HP Linux Printing and Imaging System (HPLI
 i   htop                            - interactive processes viewer              
+i   hunspell-en-au                  - English (Australia) dictionary for hunspel
+i   hunspell-en-ca                  - English (Canada) dictionary for hunspell  
+i   hunspell-en-gb                  - English (GB) dictionary for hunspell      
+i   hunspell-en-za                  - English (South Africa) dictionary for huns
+i   hyphen-en-gb                    - English (GB) hyphenation patterns         
 i   hyphen-en-us                    - US English hyphenation patterns for LibreO
 i   i3lock                          - improved screen locker                    
 i   i3status                        - Generates a status line for dzen2, xmobar 
 i   ibus                            - Intelligent Input Bus - core              
 i   ibus-gtk                        - Intelligent Input Bus - GTK+2 support     
 i   ibus-gtk3                       - Intelligent Input Bus - GTK+3 support     
+i   ibus-mozc                       - Mozc engine for IBus - Client of the Mozc 
 i   ibus-pinyin                     - Pinyin engine for IBus                    
 i   ibus-table                      - table engine for IBus                     
 i   icoutils                        - Create and extract MS Windows icons and cu
@@ -273,6 +290,7 @@ i   language-pack-en                - translation updates for language English
 i   language-pack-en-base           - translations for language English         
 i   language-pack-gnome-en          - GNOME translation updates for language Eng
 i   language-pack-gnome-en-base     - GNOME translations for language English   
+i   language-pack-gnome-ja          - GNOME translation updates for language Jap
 i   laptop-detect                   - attempt to detect a laptop                
 i   less                            - pager program similar to more             
 i   libacl1                         - Access control list shared library        
@@ -302,6 +320,7 @@ i   libc-bin                        - GNU C Library: Binaries
 i   libc-dev-bin                    - GNU C Library: Development binaries       
 i   libc6                           - GNU C Library: Shared libraries           
 i   libc6-dev                       - GNU C Library: Development Libraries and H
+i   libcaca0                        - colour ASCII art library                  
 i   libcap2                         - POSIX 1003.1e capabilities (library)      
 i   libcap2-bin                     - POSIX 1003.1e capabilities (utilities)    
 i   libcomerr2                      - common error description library          
@@ -313,6 +332,7 @@ i   libdconf-dev                    - simple configuration storage system - deve
 i   libdebconfclient0               - Debian Configuration Management System (C-
 i   libdevmapper1.02.1              - Linux Kernel Device Mapper userspace libra
 i   libdfu1                         - Firmware update daemon library for DFU sup
+i   libdistro-info-perl             - information about distributions' releases 
 i   libdjvulibre-text               - Linguistic support files for libdjvulibre 
 i   libdjvulibre21                  - Runtime support for the DjVu image format 
 i   libdns-export162                - Exported DNS Shared Library               
@@ -386,11 +406,13 @@ i   libisccc140                     - Command Channel Library used by BIND
 i   libjasper1                      - JasPer JPEG-2000 runtime library          
 i   libjpeg-turbo8                  - IJG JPEG compliant runtime library.       
 i   libjpeg-turbo8-dev              - Development files for the IJG JPEG library
+i   libjs-underscore                - JavaScript's functional programming helper
 i   libjson-c2                      - JSON manipulation library - shared library
 i   libk5crypto3                    - MIT Kerberos runtime libraries - Crypto Li
 i   libklibc                        - minimal libc subset for use with initramfs
 i   libkmod2                        - libkmod shared library                    
 i   libldap-2.4-2                   - OpenLDAP libraries                        
+i   libldb1                         - LDAP-like embedded database - shared libra
 i   liblocale-gettext-perl          - module using libc functions for internatio
 i   liblua5.3-0                     - Shared library for the Lua interpreter ver
 i   liblz4-1                        - Fast LZ compression algorithm library - ru
@@ -470,8 +492,13 @@ i   libreoffice-avmedia-backend-gst - GStreamer backend for LibreOffice
 i   libreoffice-calc                - office productivity suite -- spreadsheet  
 i   libreoffice-common              - office productivity suite -- arch-independ
 i   libreoffice-gnome               - office productivity suite -- GNOME integra
+i   libreoffice-help-en-gb          - office productivity suite -- English_briti
 i   libreoffice-help-en-us          - office productivity suite -- English_ameri
+i   libreoffice-help-ja             - office productivity suite -- Japanese help
 i   libreoffice-impress             - office productivity suite -- presentation 
+i   libreoffice-l10n-en-gb          - office productivity suite -- English_briti
+i   libreoffice-l10n-en-za          - office productivity suite -- English_south
+i   libreoffice-l10n-ja             - office productivity suite -- Japanese lang
 i   libreoffice-math                - office productivity suite -- equation edit
 i   libreoffice-ogltrans            - LibreOffice Impress extension for slide tr
 i   libreoffice-pdfimport           - PDF Import component for LibreOffice      
@@ -580,6 +607,7 @@ i   libxslt1.1                      - XSLT 1.0 processing library - runtime libr
 i   libxtables11                    - netfilter xtables library                 
 i   libyajl-dev                     - Yet Another JSON Library - development fil
 i   libytnef0                       - improved decoder for application/ms-tnef a
+i   libzinnia0v5                    - online handwriting recognition system with
 i   libzmq5                         - lightweight messaging kernel (shared libra
 i   linux-base                      - Linux image base package                  
 i   linux-firmware                  - Firmware for Linux kernel drivers         
@@ -601,13 +629,16 @@ i   mendeleydesktop                 - Mendeley Desktop (paper management and sha
 i   mime-support                    - MIME files 'mime.types' & 'mailcap', and s
 i   mit-scheme                      - MIT/GNU Scheme development environment    
 i   mona                            - theorem prover based on automata          
+i   mongodb-compass                 - The MongoDB GUI                           
 i   mongodb-org                     - MongoDB open source document-oriented data
 i   mount                           - tools for mounting and manipulating filesy
 i   mousetweaks                     - mouse accessibility enhancements for the G
-i   mpv                             - video player based on MPlayer/mplayer2    
+i   mozc-utils-gui                  - GUI utilities of the Mozc input method    
+i   mpv                             - mplayer/mplayer2 based video player       
 i   multiarch-support               - Transitional package to ensure multiarch c
 i   mutt                            - text-based mailreader supporting MIME, GPG
 i   mutter                          - lightweight GTK+ window manager           
+i   mythes-en-au                    - Australian English Thesaurus for OpenOffic
 i   mythes-en-us                    - English (USA) Thesaurus for LibreOffice   
 i   nautilus                        - file manager and graphical shell for GNOME
 i   nautilus-sendto                 - integrates Evolution and Pidgin into the N
@@ -715,6 +746,7 @@ i   systemd-sysv                    - system and service manager - SysV links
 i   sysv-rc                         - System-V-like runlevel change mechanism   
 i   sysvinit-utils                  - System-V-like utilities                   
 i   tar                             - GNU version of the tar archiving utility  
+i   tegaki-zinnia-japanese          - Japanese handwriting model for Zinnia     
 i   telepathy-idle                  - IRC connection manager for Telepathy      
 i   terminator                      - multiple GNOME terminals in one window    
 i   texlive                         - TeX Live: A decent selection of the TeX Li
@@ -722,7 +754,9 @@ i   texlive-fonts-recommended       - TeX Live: Recommended fonts
 i   texlive-full                    - TeX Live: metapackage pulling in all compo
 i   texstudio                       - LaTeX Editor                              
 i   thunderbird-locale-en           - English language pack for Thunderbird     
+i   thunderbird-locale-en-gb        - Transitional English language pack for Thu
 i   thunderbird-locale-en-us        - Transitional English language pack for Thu
+i   thunderbird-locale-ja           - Japanese language pack for Thunderbird    
 i   tk-dev                          - Toolkit for Tcl and X11 (default version) 
 i   totem                           - Simple media player for the GNOME desktop 
 i   tracker                         - metadata database, indexer and search tool

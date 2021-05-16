@@ -1,6 +1,6 @@
-total 45368
-drwxrwxr-x  2 david david   12288 Mar  8  2019 .
-drwx------ 45 david david    4096 Feb 14 23:00 ..
+total 46584
+drwxrwxr-x  2 david david   16384 Mar  4 16:08 .
+drwx------ 45 david david    4096 May 16 18:52 ..
 -rw-rw-r--  1 david david   54888 Apr  6  2017 3270Medium.ttf
 -rw-rw-r--  1 david david   54828 Apr  6  2017 3270Narrow.ttf
 -rw-rw-r--  1 david david   54888 Apr  6  2017 3270SemiNarrow.ttf
@@ -9,6 +9,9 @@ drwx------ 45 david david    4096 Feb 14 23:00 ..
 -rw-rw-r--  1 david david   21784 Oct 19  2015 AngloSaxon Runes-1.ttf
 -rw-rw-r--  1 david david   24348 Oct 19  2015 AngloSaxon Runes-2.ttf
 -rw-rw-r--  1 david david   18576 Oct 19  2015 AngloSaxon Runes.ttf
+-rw-rw-r--  1 david david   21976 Oct  4  2006 animeace2_bld.otf
+-rw-rw-r--  1 david david   25796 Oct  4  2006 animeace2_ital.otf
+-rw-rw-r--  1 david david   20984 Oct  4  2006 animeace2_reg.otf
 -rw-rw-r--  1 david david  101704 Apr  6  2017 Anonymice Powerline Bold Italic.ttf
 -rw-rw-r--  1 david david  113348 Apr  6  2017 Anonymice Powerline Bold.ttf
 -rw-rw-r--  1 david david  104192 Apr  6  2017 Anonymice Powerline Italic.ttf
@@ -18,8 +21,10 @@ drwx------ 45 david david    4096 Feb 14 23:00 ..
 -rw-rw-r--  1 david david  538636 Apr  6  2017 Arimo Bold Italic for Powerline.ttf
 -rw-rw-r--  1 david david  534212 Apr  6  2017 Arimo for Powerline.ttf
 -rw-rw-r--  1 david david  543172 Apr  6  2017 Arimo Italic for Powerline.ttf
+-rw-rw-r--  1 david david   44128 Mar 20  1999 atwriter.ttf
 -rw-rw-r--  1 david david  105164 Jan 28  2019 Augusta-Shadow.ttf
 -rw-rw-r--  1 david david   55028 Jan 28  2019 Augusta.ttf
+-rw-rw-r--  1 david david   16488 Aug 17  2016 BEARHUGSBYRATTICSASSIN-Regular.ttf
 -rw-rw-r--  1 david david   34476 Jan 13  2016 Bookinsanity Bold Italic.otf
 -rw-rw-r--  1 david david   29144 Sep  6  2016 Bookinsanity Bold.otf
 -rw-rw-r--  1 david david   34268 Jan 13  2016 Bookinsanity Italic.otf
@@ -90,6 +95,19 @@ drwx------ 45 david david    4096 Feb 14 23:00 ..
 -rw-r--r--  1 david david  259888 Feb 28  2019 Inter-SemiBold.ttf
 -rw-r--r--  1 david david  264824 Feb 28  2019 Inter-Thin-BETA.ttf
 -rw-r--r--  1 david david  275220 Feb 28  2019 Inter-ThinItalic-BETA.ttf
+-rw-rw-r--  1 david david   53996 Oct 19  2004 KOMIKAX_.ttf
+-rw-rw-r--  1 david david   54124 Oct 19  2004 KOMTITA_.ttf
+-rw-rw-r--  1 david david   51096 Oct 19  2004 KOMTITBR.ttf
+-rw-rw-r--  1 david david   74376 Oct 19  2004 KOMTITE_.ttf
+-rw-rw-r--  1 david david  116252 Oct 19  2004 KOMTITG_.ttf
+-rw-rw-r--  1 david david   55384 Oct 19  2004 KOMTITK_.ttf
+-rw-rw-r--  1 david david   58752 Oct 19  2004 KOMTITP_.ttf
+-rw-rw-r--  1 david david  120696 Oct 19  2004 KOMTITS_.ttf
+-rw-rw-r--  1 david david   61188 Oct 19  2004 KOMTITTL.ttf
+-rw-rw-r--  1 david david   51232 Oct 19  2004 KOMTIT__.ttf
+-rw-rw-r--  1 david david   52436 Oct 19  2004 KOMTITT_.ttf
+-rw-rw-r--  1 david david  136064 Oct 19  2004 KOMTITWR.ttf
+-rw-rw-r--  1 david david   54516 Oct 19  2004 KOMTITW_.ttf
 -rw-rw-r--  1 david david  279128 Apr  6  2017 Literation Mono Powerline Bold Italic.ttf
 -rw-rw-r--  1 david david  302856 Apr  6  2017 Literation Mono Powerline Bold.ttf
 -rw-rw-r--  1 david david  276168 Apr  6  2017 Literation Mono Powerline Italic.ttf
@@ -98,6 +116,9 @@ drwx------ 45 david david    4096 Feb 14 23:00 ..
 -rw-rw-r--  1 david david   73320 Jan  6  2011 LuckiestGuy-Regular.ttf
 -rw-rw-r--  1 david david   50800 Jan 28  2019 Luna.ttf
 -rw-rw-r--  1 david david   48776 Jan 18  2012 Macondo-Regular.ttf
+-rw-rw-r--  1 david david   30300 Feb 14  2001 mangatb.ttf
+-rw-rw-r--  1 david david   30428 Feb 14  2001 mangati.ttf
+-rw-rw-r--  1 david david   29964 Feb 14  2001 mangat.ttf
 -rw-rw-r--  1 david david  484876 Apr  6  2017 Meslo LG L Bold for Powerline.ttf
 -rw-rw-r--  1 david david  442516 Apr  6  2017 Meslo LG L Bold Italic for Powerline.ttf
 -rw-rw-r--  1 david david  484940 Apr  6  2017 Meslo LG L DZ Bold for Powerline.ttf
@@ -201,6 +222,7 @@ drwx------ 45 david david    4096 Feb 14 23:00 ..
 -rw-rw-r--  1 david david  197584 Apr  6  2017 Ubuntu Mono derivative Powerline.ttf
 -rw-r--r--  1 david david      36 Sep 17  2018 .uuid
 -rw-rw-r--  1 david david   62364 Oct 12  2011 VastShadow-Regular.ttf
+-rw-rw-r--  1 david david   24904 Mar 28  2020 Wash Your Hand.otf
 -rw-rw-r--  1 david david   13252 Dec  6  2015 Zatanna Misdirection Bold Italic.otf
 -rw-rw-r--  1 david david   12308 Dec  6  2015 Zatanna Misdirection Bold.otf
 -rw-rw-r--  1 david david   13232 Dec  6  2015 Zatanna Misdirection Italic.otf
