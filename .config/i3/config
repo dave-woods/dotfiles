@@ -388,17 +388,17 @@ client.urgent           $urg_border 	$bg 					$text 		$urg_border 	$urg_border
 
 ## audio controls
 # increase sound volume
-bindsym Mod1+XF86AudioRaiseVolume exec pactl set-sink-volume 1 +1%
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
-bindsym Shift+XF86AudioRaiseVolume exec pactl set-sink-volume 1 +10%
-bindsym $mod+XF86AudioRaiseVolume exec pactl set-sink-volume 1 100%
+bindsym Mod1+XF86AudioRaiseVolume exec pactl set-sink-volume 0 +1%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym Shift+XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
+bindsym $mod+XF86AudioRaiseVolume exec pactl set-sink-volume 0 100%
 # decrease sound volume
-bindsym Mod1+XF86AudioLowerVolume exec pactl set-sink-volume 1 -1%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
-bindsym Shift+XF86AudioLowerVolume exec pactl set-sink-volume 1 -10%
-bindsym $mod+XF86AudioLowerVolume exec pactl set-sink-volume 1 0%
+bindsym Mod1+XF86AudioLowerVolume exec pactl set-sink-volume 0 -1%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym Shift+XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
+bindsym $mod+XF86AudioLowerVolume exec pactl set-sink-volume 0 0%
 # mute sound
-bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
@@ -483,6 +483,7 @@ assign [class="Spotify"] $ws9
 # assign [class="Code"] $ws6
 assign [class="^Gimp"] $ws8
 for_window [class="mpv"] floating enable, resize set 640 480;
+for_window [class="Gnome-calculator"] floating enable, resize set 640 480;
 
 ## Set workspaces to specific monitors
 # workspace 7 output DP2
@@ -493,8 +494,10 @@ for_window [class="mpv"] floating enable, resize set 640 480;
  # exec --no-startup-id nm-applet
  # Volume Control icon
  # exec --no-startup-id pasystray
+# Emoji picker 
+exec --no-startup-id emojione-picker
 # Blue light filter
-exec --no-startup-id xflux
+exec --no-startup-id fluxgui
 # Wallpaper changer
 exec --no-startup-id variety
 # Window compositing manager
